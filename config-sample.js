@@ -1,12 +1,12 @@
 
 var config = {
-  blog_domain: "http://whereintheworldis.jeffdouglas.com",
+  blog_domain: "YOUR-BLOG-URL",
   pagesDir: [__dirname,'pages'].join('/'),
   imagesDir: [__dirname,'images'].join('/'),
   cloudinary : {
-    cloud_name: 'blog-jeffdouglas-com',
-    api_key: '598884928228984', 
-    api_secret: 'rct1RqVH-pf7_hPgAJXXlCGhUaY' 
+    cloud_name: 'YOUR-CLOUDINARY-CLOUD-NAME',
+    api_key: 'YOUR-CLOUDINARY-API-KEY', 
+    api_secret: 'YOUR-CLOUDINARY-API-SECRET'
   }
 }
 

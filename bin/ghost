@@ -51,7 +51,7 @@ program
 
 program
   .command('404check')
-  .description('Checks each post to make sure it exists actually exists.')
+  .description('Checks each post to make sure it exists actually exists at your blog domain.')
   .action(function(){
     spooky.check404s();
 }); 
