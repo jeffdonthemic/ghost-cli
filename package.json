@@ -1,0 +1,17 @@
+{
+  "author": "Jeff Douglas <jeff@jeffdouglas.com> (http://blog.jeffdouglas.com)",  
+  "name": "ghost-cli",
+  "description": "A cli for ghost in node",
+  "version": "0.0.2",
+  "private": false,
+  "dependencies": {
+    "commander": "~2.1.0",
+    "q": "~0.9.7",
+    "lodash": "~2.4.1",
+    "moment": "~2.6.0",
+    "graceful-fs": "~2.0.3",
+    "cloudinary": "~1.0.9",
+    "request": "~2.36.0",
+    "replace": "~0.2.9"
+  }
+}

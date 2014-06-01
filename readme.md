@@ -1,0 +1,3 @@
+# Instructions
+
+./bin/ghost --help

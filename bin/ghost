@@ -1,0 +1,101 @@
+#!/usr/bin/env node
+
+var program = require('commander'),
+  cloudinary = require('cloudinary'),
+  config = require('../config')
+  spooky = require('../lib/spooky');
+
+cloudinary.config({ 
+  cloud_name: config.cloudinary.cloud_name, 
+  api_key: config.cloudinary.api_key, 
+  api_secret: config.cloudinary.api_secret
+});  
+
+program
+  .version('0.0.3')
+
+program
+  .command('blogstats')
+  .description('Displays blog stats.')
+  .action(function(){
+    spooky.blogstats();
+});    
+
+program
+  .command('poststats <post>')
+  .description('Displays stats for a specific post (e.g., 10)')
+  .action(function(post){
+    spooky.poststats(post);
+});    
+
+program
+  .command('find <t>')
+  .description('Finds the target t in all posts and diplays the matching file names.')
+  .action(function(target){
+    spooky.find(target);
+}); 
+
+program
+  .command('findtag <t>')
+  .description('Finds all posts with tag t.')
+  .action(function(tag){
+    spooky.findtag(tag); 
+});   
+
+program
+  .command('replace <t> <r> <post>')
+  .description('Replaces all instance of t with r in the specified post (e.g., 10).')
+  .action(function(target, replacement, post){
+    spooky.replace(target, replacement, post);      
+});      
+
+program
+  .command('404check')
+  .description('Checks each post to make sure it exists actually exists.')
+  .action(function(){
+    spooky.check404s();
+}); 
+
+program
+  .command('toc')
+  .description('Build a simple markdown page with links to all posts.')
+  .action(function(){
+    spooky.toc();
+});   
+
+program
+  .command('dir2cloudinary')
+  .description('Uploads all files in the /images directory to Cloudinary.')
+  .action(function(){
+    spooky.dir2cloudinary();
+});  
+
+program
+  .command('url2cloudinary <url>')
+  .description('Upload an image to Cloudinary by URL.')
+  .action(function(url){
+    spooky.url2cloudinary(url);
+}); 
+
+program
+  .command('findinwayback <url>')
+  .description('Finds a URL (i.e., image) in the Internet Archive Wayback Machine.')
+  .action(function(url){
+    spooky.findinwayback(url);
+});     
+
+program
+  .command('waybackit')
+  .description('Looks for an image in a file and tries to locate it in the wayback machine.')
+  .action(function(file){
+    spooky.waybackit(file);
+});     
+
+program
+  .command('dump')
+  .description('Writes the markdown for each blog post to a separate file.')
+  .action(function(){
+    spooky.dump(); 
+});    
+
+program.parse(process.argv);
