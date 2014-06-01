@@ -1,8 +1,8 @@
 # Ghost CLI
 
-Since the [Ghost](http://www.ghost.org/) blogging platform does not include a CLI (at this time), I decided to build one containing some simple admin functions. 
+Since the [Ghost](http://www.ghost.org/) blogging platform does not include a CLI (at this time), I decided to build one containing some simple admin functions. I needed a number of these functions when I ported my blog from WordPress with roughly 500 post to Ghost. I had a number things that needed to be corrected and cleaned up.
 
-The CLI operates from the export of your blog's settings and data. Any changes made using the CLI are not reflected in your blog. You must **manually** update your blog. 
+The CLI operates from the export of your blog's settings and data. Any changes made using the CLI are not reflected in your blog. You must **manually** update your blog. **Again, no changes are automatically made on your Ghost blog.**
 
 # Installation
 
