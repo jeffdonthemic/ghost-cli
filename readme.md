@@ -14,7 +14,7 @@ cd ghost-cli
 npm install
 ```
 
-Rename `config-sample.js` to `sample.js` and add your blog's domain (e.g., http://blog.jeffdouglas.com) and Cloudinary Account Details from the [Cloudinary Dashboard](https://cloudinary.com/console) if you want to use the Cloudinary functions. 
+Rename `config-sample.js` to `config.js` and add your blog's domain (e.g., http://blog.jeffdouglas.com) and Cloudinary Account Details from the [Cloudinary Dashboard](https://cloudinary.com/console) if you want to use the Cloudinary functions. 
 
 You may also have to run `chmod 777 ./bin/ghost` to make the file executable on OS X. 
 
