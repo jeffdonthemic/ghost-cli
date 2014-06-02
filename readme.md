@@ -4,6 +4,8 @@ Since the [Ghost](http://www.ghost.org/) blogging platform does not include a CL
 
 The CLI operates from the export of your blog's settings and data. Any changes made using the CLI are not reflected in your blog. You must **manually** update your blog. **Again, no changes are automatically made on your Ghost blog.**
 
+**[This video](https://www.youtube.com/watch?v=LzG_EJ14g3Q) covers installation and an overview of the CLI's functionality.**
+
 # Installation
 
 The CLI uses [Node.js](http://nodejs.org/) so make sure you have it installed and perform the following to get the CLI up and running:
