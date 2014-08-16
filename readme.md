@@ -8,12 +8,8 @@ The CLI operates from the export of your blog's settings and data. Any changes m
 
 # Installation
 
-The CLI uses [Node.js](http://nodejs.org/) so make sure you have it installed and perform the following to get the CLI up and running:
-
 ```bash
-git clone git@github.com:jeffdonthemic/ghost-cli.git
-cd ghost-cli
-npm install
+npm install ghost-cli
 ```
 
 Rename `config-sample.js` to `config.js` and add your blog's domain (e.g., http://blog.jeffdouglas.com) and Cloudinary Account Details from the [Cloudinary Dashboard](https://cloudinary.com/console) if you want to use the Cloudinary functions. 
