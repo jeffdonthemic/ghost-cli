@@ -1,8 +1,8 @@
 {
-  "author": "Jeff Douglas <jeff@jeffdouglas.com> (http://blog.jeffdouglas.com)",  
+  "author": "Marco Mornati <marco@mornati.net> - Forked from Jeff Douglas <jeff@jeffdouglas.com> (http://blog.jeffdouglas.com)",  
   "name": "ghost-cli",
   "description": "A cli for ghost in node",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "private": false,
   "dependencies": {
     "commander": "~2.1.0",
@@ -12,6 +12,7 @@
     "graceful-fs": "~2.0.3",
     "cloudinary": "~1.0.9",
     "request": "~2.36.0",
-    "replace": "~0.2.9"
+    "replace": "~0.2.9",
+    "glob": "~4.0.6"
   }
 }
