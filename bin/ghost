@@ -12,7 +12,7 @@ cloudinary.config({
 });  
 
 program
-  .version('0.0.3')
+  .version('0.0.4')
 
 program
   .command('blogstats')
@@ -85,11 +85,18 @@ program
 });     
 
 program
-  .command('waybackit')
-  .description('Looks for an image in a file and tries to locate it in the wayback machine.')
+  .command('cloudit')
+  .description('Upload all non cloudinary images in posts.')
   .action(function(file){
-    spooky.waybackit(file);
-});     
+    spooky.cloudit(file);
+}); 
+
+program
+  .command('checkcloud')
+  .description('Check posts with local images.')
+  .action(function(){
+    spooky.checkcloud();
+});      
 
 program
   .command('dump')
@@ -97,5 +104,6 @@ program
   .action(function(){
     spooky.dump(); 
 });    
+
 
 program.parse(process.argv);
